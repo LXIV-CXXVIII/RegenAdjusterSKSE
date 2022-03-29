@@ -6,7 +6,7 @@ set(VCPKG_TARGET_TRIPLET "x64-windows-static" CACHE STRING "")
 # ---- Project ----
 
 project(
-	loki_POISE
+	loki_RegenAdjuster
 	VERSION 1.0.0
 	LANGUAGES CXX
 )
@@ -127,14 +127,13 @@ set(headers
 
 set(sources
 	src/main.cpp
+	src/Project/RegenAdjuster.cpp
+	src/Project/RegenAdjuster.h
+	src/Project/Hooks/Hooks.cpp
+	src/Project/Hooks/Hooks.h
+	src/Project/GMST/GMST.cpp
+	src/Project/GMST/GMST.h
 	src/PCH.cpp
-	src/POISE/PoiseMod.cpp
-	src/POISE/PoiseMod.h
-	src/POISE/TrueHUDControl.cpp
-	src/POISE/TrueHUDControl.h
-	src/POISE/TrueHUDAPI.h
-	src/Loki_PluginTools.cpp
-	src/Loki_PluginTools.h
 
 )
 
